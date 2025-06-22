@@ -1,111 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
     margin: 0;
-    background: #f9f9f9;
-    color: #222;
+    padding: 0;
 }
-
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px 0;
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
-
-.profile-header {
+.profile {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: 24px;
 }
-
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;
+    border: 3px solid #0077b5;
 }
-
-.social-links {
-    margin-top: 10px;
+.profile-info {
+    flex: 1;
 }
-
-.icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
-    vertical-align: middle;
-    transition: transform 0.2s;
+.profile-info h1 {
+    margin: 0 0 8px 0;
+    font-size: 2em;
+    color: #222;
 }
-
-.icon:hover {
-    transform: scale(1.15);
-}
-
-main {
-    max-width: 700px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h1, h2 {
+.profile-links {
     margin-bottom: 10px;
 }
-
-.about p {
-    line-height: 1.6;
-}
-
-.projects .project {
-    margin-bottom: 15px;
-}
-
-.dropdown-btn {
-    background: #eee;
+.profile-links a {
+    margin-right: 12px;
     color: #222;
-    padding: 10px 16px;
+    font-size: 1.5em;
+    transition: color 0.2s;
+}
+.profile-links a:hover {
+    color: #0077b5;
+}
+.about-me p {
+    margin: 4px 0;
+    color: #444;
+}
+.projects, .skills, .education {
+    margin-top: 32px;
+}
+.projects h2, .skills h2, .education h2 {
+    margin-bottom: 10px;
+    color: #0077b5;
+}
+.project {
+    margin-bottom: 10px;
+}
+.dropdown-btn {
+    background-color: #0077b5;
+    color: white;
+    padding: 8px 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    cursor: pointer;
     width: 100%;
     text-align: left;
-    font-size: 1rem;
-    cursor: pointer;
+    font-size: 1em;
     outline: none;
     transition: background 0.2s;
 }
-
 .dropdown-btn:hover {
-    background: #d4eaff;
+    background-color: #005983;
 }
-
 .dropdown-content {
     display: none;
-    background: #f5faff;
+    background: #e8f0fe;
     padding: 10px 16px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 6px 6px;
     margin-top: 2px;
+    color: #333;
 }
-
 .skills ul, .education ul {
-    padding-left: 20px;
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 16px;
 }
-
-footer {
-    background: #222;
-    color: #fff;
+.bottom-links {
+    margin-top: 28px;
     text-align: center;
-    padding: 18px 0 12px 0;
-    margin-top: 40px;
-    border-radius: 0 0 10px 10px;
 }
-
-.footer-social {
-    margin-bottom: 8px;
+.bottom-links a {
+    margin: 0 10px;
+    font-size: 1.6em;
+}
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-pic {
+        margin-bottom: 12px;
+    }
 }
