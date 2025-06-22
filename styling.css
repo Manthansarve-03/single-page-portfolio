@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #f5f6fa;
     margin: 0;
-    padding: 0;
+    padding: 30px;
 }
 .container {
     max-width: 600px;
@@ -13,13 +13,14 @@ body {
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 .profile {
-    display: flex;
+    display: flex,;
     align-items: center;
     gap: 24px;
 }
 .profile-pic {
     width: 120px;
     height: 120px;
+    float:left;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #0077b5;
