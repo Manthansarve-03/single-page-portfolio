@@ -60,7 +60,7 @@ body {
     margin-bottom: 10px;
 }
 .dropdown-btn {
-    background-color: #0077b5;
+    background-color: #D3D3D3;
     color: white;
     padding: 8px 16px;
     border: none;
@@ -73,11 +73,11 @@ body {
     transition: background 0.2s;
 }
 .dropdown-btn:hover {
-    background-color: #005983;
+    background-color:black;
 }
 .dropdown-content {
     display: none;
-    background: #e8f0fe;
+    background: white;
     padding: 10px 16px;
     border-radius: 0 0 6px 6px;
     margin-top: 2px;
