@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Profile Section -->
+        <section class="profile-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h1 id="myName">Your Name</h1>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with a keen interest in building simple and effective web solutions. 
+                With a solid foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into interactive applications. 
+                I am always eager to learn new technologies and improve my skills.
+                My goal is to create user-friendly and accessible websites.
+            </p>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <div id="projects-list">
+                <!-- Projects will be rendered here by JS -->
+            </div>
+            <button id="addProjectBtn">Add Project</button>
+        </section>
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Technology in Computer Science - XYZ University (2020-2024)</li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+            <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+            <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
