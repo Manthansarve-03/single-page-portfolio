@@ -2,62 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header/Profile Section -->
-        <section class="profile-section">
+    <header>
+        <div class="profile-header">
             <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
             <div>
-                <h1 id="myName">Your Name</h1>
+                <h1>Your Name</h1>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin fa-2x"></i>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <img src="icons/linkedin.svg" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank">
+                        <img src="icons/github.svg" alt="GitHub" class="icon">
                     </a>
                 </div>
             </div>
-        </section>
-        <!-- About Section -->
-        <section class="about-section">
+        </div>
+    </header>
+    <main>
+        <section class="about">
             <h2>About Me</h2>
             <p>
-                I am a passionate web developer with a keen interest in building simple and effective web solutions. 
-                With a solid foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into interactive applications. 
-                I am always eager to learn new technologies and improve my skills.
-                My goal is to create user-friendly and accessible websites.
+                Passionate Computer Science student specializing in Java, C++, and web development.<br>
+                Dedicated to solving global challenges through innovative tech solutions.<br>
+                Aspiring to contribute to research and impress top Irish universities.
             </p>
         </section>
-        <!-- Projects Section -->
-        <section class="projects-section">
+        <section class="projects">
             <h2>Projects</h2>
-            <div id="projects-list">
-                <!-- Projects will be rendered here by JS -->
+            <div class="project">
+                <button class="dropdown-btn">Project 1: Portfolio Website</button>
+                <div class="dropdown-content">
+                    <p>Built a responsive personal portfolio using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                </div>
             </div>
-            <button id="addProjectBtn">Add Project</button>
+            <div class="project">
+                <button class="dropdown-btn">Project 2: Smart Attendance System</button>
+                <div class="dropdown-content">
+                    <p>Developed an automated attendance system using Java and facial recognition to streamline classroom management.</p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
         </section>
-        <!-- Education Section -->
-        <section class="education-section">
-            <h2>Education</h2>
+        <section class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>Bachelor of Technology in Computer Science - XYZ University (2020-2024)</li>
-                <!-- Add more as needed -->
+                <li>Java, C++</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Web Development</li>
+                <li>Problem Solving</li>
+                <li>Research & Innovation</li>
             </ul>
         </section>
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <h2>Contact</h2>
-            <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
-            <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-            <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Computer Science & Engineering</li>
+                <li>Focused on software engineering and research</li>
+                <li>Active member of coding and innovation clubs</li>
+            </ul>
         </section>
-    </div>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank">
+                <img src="icons/github.svg" alt="GitHub" class="icon">
+            </a>
+        </div>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
